@@ -1,0 +1,16 @@
+.feature-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:18px 0;
+}
+
+.feature-item span{
+    color:var(--success);
+    font-weight:bold;
+    font-size:20px;
+}
+
+.feature-item p{
+    margin:0;
+}

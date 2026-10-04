@@ -1,29 +1,7 @@
-import Button from "./components/ui/Button";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return (
-    <div
-      style={{
-        padding: "50px",
-        display: "flex",
-        gap: "20px",
-      }}
-    >
-      <Button>Primary</Button>
-
-      <Button variant="success">
-        Success
-      </Button>
-
-      <Button variant="warning">
-        Warning
-      </Button>
-
-      <Button variant="danger">
-        Delete
-      </Button>
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
