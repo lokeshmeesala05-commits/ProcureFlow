@@ -1,19 +1,43 @@
-import MainLayout from "../../components/layout/MainLayout";
+import DashboardHeader from "../../components/dashboard/DashboardHeader";
+import StatCard from "../../components/dashboard/StatCard";
+import RecentRequests from "../../components/dashboard/RecentRequests";
+import "./Dashboard.css";
+import QuickActions from "../../components/dashboard/QuickActions";
 
 function Dashboard() {
+  return (
+    <>
+      <DashboardHeader />
 
-    return (
+        <div className="stats-grid">
+        <StatCard
+          title="Products"
+          value="248"
+          color="#2563EB"
+        />
 
-        <MainLayout>
+        <StatCard
+          title="Vendors"
+          value="54"
+          color="#10B981"
+        />
 
-            <h1>Dashboard</h1>
+        <StatCard
+          title="Requests"
+          value="32"
+          color="#F59E0B"
+        />
 
-            <p>Welcome to ProcureFlow Dashboard.</p>
-
-        </MainLayout>
-
-    )
-
+        <StatCard
+          title="Departments"
+          value="8"
+          color="#EF4444"
+        />
+      </div>
+      <RecentRequests />
+      <QuickActions />
+    </>
+  );
 }
 
 export default Dashboard;

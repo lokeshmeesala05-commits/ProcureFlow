@@ -1,0 +1,21 @@
+.status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.pending{
+    background:#FEF3C7;
+    color:#92400E;
+}
+
+.approved{
+    background:#DCFCE7;
+    color:#166534;
+}
+
+.rejected{
+    background:#FEE2E2;
+    color:#991B1B;
+}

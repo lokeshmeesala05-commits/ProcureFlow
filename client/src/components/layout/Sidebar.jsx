@@ -23,7 +23,7 @@ function Sidebar() {
 
         <a href="#">Maintenance</a>
 
-        <a href="#">Departments</a>
+        <a href="/departments">Departments</a>
 
         <a href="#">Users</a>
 

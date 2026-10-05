@@ -1,0 +1,33 @@
+.recent-card {
+    margin-top: 35px;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+
+.recent-card h2 {
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th {
+    text-align: left;
+    padding: 14px;
+    background: #F8FAFC;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #E5E7EB;
+}
