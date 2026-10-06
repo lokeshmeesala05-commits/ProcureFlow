@@ -1,33 +1,7 @@
 import "./DepartmentTable.css";
 
-const departments = [
-  {
-    id: 1,
-    name: "CSE",
-    hod: "Dr. Kumar",
-    status: "Active",
-  },
-  {
-    id: 2,
-    name: "ECE",
-    hod: "Dr. Reddy",
-    status: "Active",
-  },
-  {
-    id: 3,
-    name: "EEE",
-    hod: "Dr. Rao",
-    status: "Active",
-  },
-  {
-    id: 4,
-    name: "AIML",
-    hod: "Dr. Sharma",
-    status: "Active",
-  },
-];
 
-function DepartmentTable({ openModal }) {
+function DepartmentTable({departments,search,setSearch,  openModal,     editDepartment, deleteDepartment,}) {
   return (
     <div className="department-card">
 
@@ -42,7 +16,10 @@ function DepartmentTable({ openModal }) {
       </div>
 
       <input
+        type="text"
         placeholder="Search Department..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
       />
 
       <table>
@@ -69,7 +46,22 @@ function DepartmentTable({ openModal }) {
               <td>{department.status}</td>
 
               <td>
-                ✏️ 🗑️
+               <span
+               style={{ cursor: "pointer", marginRight: "10px" }}
+               onClick={() => editDepartment(department)}
+                >
+               ✏️
+               </span>
+
+               <span style={{ cursor: "pointer" }}
+               onClick={() => {
+               if (window.confirm("Are you sure you want to delete this department?")) {
+               deleteDepartment(department.id);
+               }
+               }}
+               >
+                🗑️
+               </span>
               </td>
 
             </tr>
