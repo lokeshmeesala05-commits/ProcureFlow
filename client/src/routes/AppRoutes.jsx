@@ -4,6 +4,7 @@ import Login from "../pages/auth/Login";
 import Dashboard from "../pages/dashboard/Dashboard";
 import MainLayout from "../components/layout/MainLayout";
 import Departments from "../pages/departments/Departments";
+import Products from "../pages/products/Products";
 
 function AppRoutes() {
   return (
@@ -28,6 +29,8 @@ function AppRoutes() {
             </MainLayout>
           }
         />
+
+        <Route path="/products" element={<Products />} />
       </Routes>
     </BrowserRouter>
   );

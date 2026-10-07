@@ -15,7 +15,7 @@ function Sidebar() {
 
         <a href="#">Purchase Requests</a>
 
-        <a href="#">Products</a>
+        <a href="/products">Products</a>
 
         <a href="#">Vendors</a>
 
